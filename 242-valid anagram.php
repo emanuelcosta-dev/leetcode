@@ -14,6 +14,6 @@ function isAnagram($s, $t)
     return  $sF == $tF;
 }
 
-$s = "sexo";
-$t = "xeso";
+$s = "anagram";
+$t = "granama";
 var_dump(isAnagram($s, $t));
