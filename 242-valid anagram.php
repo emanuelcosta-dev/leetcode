@@ -8,11 +8,10 @@
 function isAnagram($s, $t)
 {
     if (strlen($t) != strlen($s)) return false;
-    foreach (str_split($s) as $sexo => $sex) {
-        //echo $sex . PHP_EOL;
-        if (str_contains($sex, $t)) return false;
-    }
-    return true;
+    $sF = array_count_values(str_split($s));
+    $tF = array_count_values(str_split($t));
+
+    return  $sF == $tF;
 }
 
 $s = "sexo";
