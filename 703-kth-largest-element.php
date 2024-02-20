@@ -30,3 +30,6 @@ class KthLargest
         return $this->minHeap->top();
     }
 }
+
+$kthLargest = new KthLargest(3, [4, 5, 8, 2]);
+echo $kthLargest->add(3) . PHP_EOL;
